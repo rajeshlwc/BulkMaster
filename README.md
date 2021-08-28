@@ -1,3 +1,4 @@
+COPIED FROM BOBBY WHITE's bulk master project.
 # BulkMaster
 Bulk Loading Utility for Salesforce
 <p>This is a Mavenized Java 8 project, so building it is simple:</p>
@@ -52,4 +53,3 @@ It's packaged as an executable jar, run it from the commandline as follows
 <p><code>java -jar target/BulkMaster-1.0-jar-with-dependencies.jar myuser@myorg.com MyPassword https://test.salesforce.com  -r -j 7500U000002UO1V  - D ./output -p 10</code></p>
 # Example One-step "Uber Upsert" a collection of files for a single object
 <p><code>java -jar target/BulkMaster-1.0-jar-with-dependencies.jar myuser@myorg.com MyPassword https://test.salesforce.com -o Account -x MyExternalId__c -uu ./input/AccountData - D ./output/AccountResults -p 60</code></p>
-
